@@ -1,18 +1,100 @@
+<!----  sass style.scss ../css/style.css   -->
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Task 6 - Codejeam</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
-
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
-
+  <div class="wrapper" id="wrapper">
+    <header>
+        <div class="logo">
+            <img src="assets\images\logo.png">
+        </div>
+        <div class="title"> 
+          <p>Piskel</p>
+        </div>
+    </header> 
+    <main>
+      <div class="left_menu">
+        <div class="instruments">
+          <ul>
+            <li>
+                <img class="instrument_images" src="./assets/images/Choose color.png" >
+                <div> Choose color</div>
+            </li>
+            <li>
+                <img class="instrument_images" src="./assets/images/Paint bucket.png" >
+                <div>Paint bucket</div>
+            </li>
+            <li>
+                <img class="instrument_images" src="./assets/images/Move.png" >
+                <div> Move</div>
+            </li>
+            <li>
+                <img class="instrument_images" src="./assets/images/Transform.png" >
+                <div>Transform</div>
+            </li>
+          </ul>
+        </div>
+        <div class="color_palette">
+          <div class="color">
+            <div class="red"></div>
+            Red
+          </div>
+          <div class="color">
+            <div class="yellow"></div>
+            Yellow
+          </div>
+          <div class="color">
+            <div class="green"></div>
+            Green
+          </div>
+          <div class="color">
+            <div class="blue"></div>
+            Blue
+          </div>
+        </div>
+      </div>
+      <div class="main_container" id="main_container">
+          <ul class="carousel" id="project_content">
+            <li class="carousel_item" id="li_3232">
+              <canvas id="can_3232" width="256" height="256"></canvas>
+            </li>
+            <li class="carousel_item" id="li_44">
+              <canvas id="can_44" width="256" height="256"></canvas>
+            </li>
+            <li class="carousel_item" id="li_256256">
+              <img id="main_img" src="./assets/images/2.png" >
+            </li>
+          </ul>
+        </div>
+      <div class="right_menu">
+        <div class="size_piskels">
+            <div class="size" id="button44">
+                4*4
+            </div>
+            <div class="size" id="button3232">
+                32*32
+            </div>
+            <div class="size" id="button256256">
+                256*256
+            </div>
+        </div>
+        <div class="button" id="full">
+          Full Screen
+        </div>
+      </div>
+    </main>
+    <footer> 
+      <div class="title"> 
+        <p>Piskel</p>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
